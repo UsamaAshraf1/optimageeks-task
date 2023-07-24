@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Crud App</title>
+</head>
+<body style="background-color: black; color: white;">
+   <div class="container"> 
+    <div class="text-center">
+        <h1>CRUD APP</h1>
+    </div>
+    <form id="books-form">
+        <div class="mb-3">
+          <label for="bookname" class="form-label">Book Name</label>
+          <input type="text" class="form-control" id="bookname" placeholder="Enter book name">
+        </div>
+        <div class="mb-3">
+          <label for="authorname" class="form-label">Author Name</label>
+          <input type="text" class="form-control" id="authorname" placeholder="Enter Author name">
+        </div>
+        <div class="mb-3">
+            <label for="pages" class="form-label">No. of pages</label>
+            <input type="number" class="form-control" id="pages" placeholder="Enter Number of pages">
+          </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form> 
+
+      <input type="text" id="searchvalue" class="float-lg-end mt-5" onkeyup="Search()" placeholder="Search">
+    <table class="table table-dark table-striped mt-5" id="books-data">
+        <thead>
+            <tr>
+                <th>Book Name</th>
+                <th>Book Author</th>
+                <th>Number of Pages</th>
+                <th>Actions</th>
+
+            </tr>
+        </thead>
+        <tbody id="book-list">
+            
+        </tbody>
+    </table>
+</div>
+
+<div id="information" class="mt-5 container">
+The information is here of selected one
+
+</div>
+<script src="task.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
